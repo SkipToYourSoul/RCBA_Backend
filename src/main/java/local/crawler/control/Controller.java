@@ -68,6 +68,7 @@ public class Controller {
         createFileDir(configuration.getStatusDir());
         createFileDir(configuration.getRepostMidDir());
         createFileDir(configuration.getUserMidDir());
+        createFileDir(configuration.getFileDir());
 
         createNewFile(configuration.getUidPosFile());
         createNewFile(configuration.getMidFile());

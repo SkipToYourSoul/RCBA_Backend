@@ -38,6 +38,11 @@ public class Configuration
     return this.props.getProperty("userMidDir");
   }
 
+  //files
+  public String getFileDir(){
+    return this.props.getProperty("fileDir");
+  }
+
   //log
   public String getLogDir()
   {
