@@ -1,0 +1,12 @@
+maxTokenCount = 100
+
+uidFile = ./data/files/uid
+uidPosFile = ./data/files/uidPos
+midFile = ./data/files/mid
+midPosFile = ./data/files/midPos
+expiredFile = ./data/files/expired
+
+logDir = ./data/logs/
+userMidDir = ./data/mid/user/
+repostMidDir = ./data/mid/repost/
+statusDir = ./data/status/

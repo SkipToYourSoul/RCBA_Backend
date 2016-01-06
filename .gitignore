@@ -1,0 +1,29 @@
+# emacs temp files
+*~
+
+#intelliJ project file
+*.iml
+.idea
+out
+target
+
+#mac temp files
+.DS_Store
+
+#java class
+*.class
+
+#user files
+config/*.log
+config/*.conf
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
