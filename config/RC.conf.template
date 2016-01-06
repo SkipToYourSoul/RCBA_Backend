@@ -1,11 +1,12 @@
 maxTokenCount = 100
 
-uidFile = ./data/files/uid
+uidFile = ./config/uid
 uidPosFile = ./data/files/uidPos
 midFile = ./data/files/mid
 midPosFile = ./data/files/midPos
 expiredFile = ./data/files/expired
 
+fileDir = ./data/files/
 logDir = ./data/logs/
 userMidDir = ./data/mid/user/
 repostMidDir = ./data/mid/repost/
