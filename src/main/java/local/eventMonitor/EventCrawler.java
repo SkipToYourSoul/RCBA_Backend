@@ -7,6 +7,14 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * get hot spot from web
+ * the example is crawling the real-time hotspot in top.baidu.com
+ * You can set the web source by yourself
+ * usually we return a List of event titles.
+ *
+ * @author liye
+ */
 public class EventCrawler {
     WebTool webTool = new WebTool();
 

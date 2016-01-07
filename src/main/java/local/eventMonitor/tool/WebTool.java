@@ -14,6 +14,11 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 
+/**
+ * get web content with url
+ *
+ * @author liye
+ */
 public class WebTool {
     private HttpClientBuilder mClientBuilder;
 

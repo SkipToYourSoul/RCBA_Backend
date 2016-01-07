@@ -7,6 +7,12 @@ import java.net.URLEncoder;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Return the event introduction, event picture, event news url and event video url
+ * The input is the title of event
+ *
+ * @author liye
+ */
 public class EventInformationGetter {
     WebTool webTool = new WebTool();
 

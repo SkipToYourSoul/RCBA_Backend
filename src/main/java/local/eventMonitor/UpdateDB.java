@@ -27,8 +27,9 @@ public class UpdateDB {
     ResultSet rs = null;
     private String today = null;
 
-    UpdateDB(Db db) {
-        this.db = db;
+    UpdateDB() {
+        String ip = "10.11.1.212";
+        this.db = new Db("ocba", ip, "root", "root");
         this.conn = db.createConnection();
         this.today = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
     }
