@@ -1,5 +1,7 @@
 maxTokenCount = 100
 
+tokenFile = ./Tokens/tokens.txt
+
 uidFile = ./config/uid
 uidPosFile = ./data/files/uidPos
 midFile = ./data/files/mid

@@ -20,6 +20,10 @@ public class Configuration
     }
   }
 
+  public String getTokenFile(){
+    return this.props.getProperty("tokenFile");
+  }
+
   //uid
   public String getUidFile()
   {

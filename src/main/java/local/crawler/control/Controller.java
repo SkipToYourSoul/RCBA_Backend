@@ -24,6 +24,8 @@ public class Controller {
 
     private String taskName;
 
+    public static Configuration configuration = new Configuration();
+
     public Controller(String taskName) {
         this.taskName = taskName;
         System.out.println(this.taskName + " start!");
@@ -38,10 +40,9 @@ public class Controller {
     private static final Logger logger = Logger.getLogger(Controller.class);
 
     //weibo and token
-    protected static Weibo weibo = new Weibo();
-    protected static TokenManage tm = new TokenManage();
-    protected static Token tokenPack = tm.GetToken();
-    protected static Configuration configuration = new Configuration();
+    protected static Weibo weibo = null;
+    protected static TokenManage tm = null;
+    protected static Token tokenPack = null;
 
     //time format
     protected SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
@@ -58,6 +59,11 @@ public class Controller {
 
         //configuration
         configuration.load(".//config/RC.conf");
+
+        //init weibo and token
+        weibo = new Weibo();
+        tm = new TokenManage();
+        tokenPack = tm.GetToken();
 
         //set token
         tm.setMaxCount(configuration.getMaxTokenCount());
