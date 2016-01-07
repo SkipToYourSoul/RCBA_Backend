@@ -15,6 +15,11 @@ import org.ansj.domain.Term;
 import org.ansj.splitWord.analysis.NlpAnalysis;
 import org.ansj.util.FilterModifWord;
 
+/**
+ * put the event information to Mysql
+ *
+ * @author liye
+ */
 public class UpdateDB {
     private Db db;
     Connection conn = null;
