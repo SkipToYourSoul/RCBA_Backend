@@ -14,7 +14,7 @@ import java.util.Properties;
  */
 public class TokenManage {
     static TokensPool tokenspool = null;
-    int maxCount = 1000;
+    int maxCount = 1;
 
     public TokenManage() {
         tokenspool = new TokensPool(Controller.configuration.getTokenFile());
@@ -36,7 +36,7 @@ public class TokenManage {
         int nextPos = tokenspool.getPos() + 1;
         tokenspool.setPos(nextPos);
         if (tokenspool.IsOver()) {
-            tokenspool.setPos(0);
+            tokenspool.ResetPos();
         }
         tokenPack = (Token) tokenspool.getTokenList().get(tokenspool.getPos());
         if (tokenPack == null) {

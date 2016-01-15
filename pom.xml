@@ -54,5 +54,13 @@
             <artifactId>libthrift</artifactId>
             <version>0.9.1</version>
         </dependency>
+
+        <!-- 夏博已经打好的包 -->
+        <dependency>
+            <groupId>dase</groupId>
+            <artifactId>microblogdao</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
     </dependencies>
 </project>
